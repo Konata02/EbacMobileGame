@@ -14,9 +14,11 @@ public class PlayerController : Singleton<PlayerController>
     public string tagToEndGame = "EndGame";
     private bool _canRun;
     public GameObject RestartScene;
+    public GameObject StartGame;
     public bool invencible = false;
     public Vector3  _startPosition;
     public GameObject coinCollector;
+    public AnimatorManager animatorManager;
 
    
     // Update is called once per frame
@@ -24,12 +26,11 @@ public class PlayerController : Singleton<PlayerController>
 
 
     
-    void Start(){
-        _canRun = true;
-        RestartScene.SetActive(false);
-        _startPosition = transform.position;
-        ResetSpeed();
+    void Start (){
+       _canRun = false;
+       animatorManager.Play(AnimatorManager.AnimationType.IDLE); 
     }
+    
     
     void Update()
     {
@@ -39,7 +40,6 @@ public class PlayerController : Singleton<PlayerController>
         transform.Translate(transform.forward * _currentSpeed * Time.deltaTime );
         
         if (Input.GetMouseButton(0)){
-
             Move(Input.mousePosition.x - pastPosition.x);
         }
 
@@ -48,7 +48,17 @@ public class PlayerController : Singleton<PlayerController>
     }
 
     public void Move(float speed){
+        
         transform.position += Vector3.right * Time.deltaTime * speed * velocity;
+    }
+
+    public void StartGameNow(){
+        StartGame.SetActive(false);
+        _canRun = true;
+        animatorManager.Play(AnimatorManager.AnimationType.RUN);
+        RestartScene.SetActive(false);
+        _startPosition = transform.position;
+        ResetSpeed();
     }
 
     private void OnCollisionEnter (Collision collision){
@@ -57,6 +67,7 @@ public class PlayerController : Singleton<PlayerController>
         
         if(!invencible){
             _canRun = false;
+            animatorManager.Play(AnimatorManager.AnimationType.DEAD);
             RestartScene.SetActive(true);
         }
         

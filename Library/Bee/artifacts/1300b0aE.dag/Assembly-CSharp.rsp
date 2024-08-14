@@ -377,6 +377,7 @@
 "Assets/Scripts/QuitButton.cs"
 "Assets/Scripts/Reorganized Scripts/Collectables/CollectBase.cs"
 "Assets/Scripts/Reorganized Scripts/Collectables/ItemCollectable.cs"
+"Assets/Scripts/Reorganized Scripts/Core/AnimatorManager.cs"
 "Assets/Scripts/Reorganized Scripts/Core/CoinsManager.cs"
 "Assets/Scripts/Reorganized Scripts/Core/GameManager.cs"
 "Assets/Scripts/Reorganized Scripts/Core/Singleton.cs"
