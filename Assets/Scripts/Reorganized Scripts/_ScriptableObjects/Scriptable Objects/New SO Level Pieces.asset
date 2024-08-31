@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b54fad0cff89f64b9f2aeaba71f211e, type: 3}
+  m_Name: New SO Level Pieces
+  m_EditorClassIdentifier: 
+  artType: 0
+  levelPieces:
+  - {fileID: 5267984433588627243, guid: 9dba47d205a48894b85c91727ef6b234, type: 3}
+  - {fileID: -4793096593157290152, guid: 1adafdabf170ec2429b5b360f633c1c6, type: 3}
+  - {fileID: 7845402503531187471, guid: a2bbaff01f35b644a88c933639906f65, type: 3}
+  pieceNumber: 5
