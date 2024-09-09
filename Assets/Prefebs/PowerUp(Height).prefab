@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 2840474789908452911}
   - component: {fileID: 1957818820124252855}
   - component: {fileID: 5992541022405549698}
+  - component: {fileID: -7565427869717168451}
   m_Layer: 0
   m_Name: PowerUp(Height)
-  m_TagString: Untagged
+  m_TagString: PowerUp
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -119,7 +120,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareTag: Player
-  duration: 2
+  duration: 4
   amountHeight: 2
-  animationDuration: 1
+  animationDuration: 2
   ease: 27
+--- !u!114 &-7565427869717168451
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5793347330081042558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9acb0cb485163743b1e76ee48f1e8e9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  scaleFactor: 0.8

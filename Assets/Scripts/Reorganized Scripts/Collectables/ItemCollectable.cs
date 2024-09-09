@@ -5,10 +5,10 @@ using UnityEngine;
 public class ItemCollectable: CollectBase
 {
     public SOInt value;
+   
     protected override void OnCollected()
     {
         
-
         if (CoinsManager.Instance != null)
         {
             CoinsManager.Instance.AddCoins(value.value);
@@ -19,7 +19,7 @@ public class ItemCollectable: CollectBase
         }
         
         base.OnCollected(); // Chama a implementação da classe base
-        
+      
 
     }
 }

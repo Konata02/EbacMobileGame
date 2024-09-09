@@ -7,6 +7,7 @@ TagManager:
   - Obstaculo
   - EndGame
   - CollectCoins
+  - Coin
   layers:
   - Default
   - TransparentFX

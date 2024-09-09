@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5075313371360122481}
   - component: {fileID: -797556471620929870}
   - component: {fileID: 3459257844173342958}
+  - component: {fileID: 3602305005526932318}
   m_Layer: 0
   m_Name: PlayerMovement
   m_TagString: Player
@@ -126,12 +127,14 @@ MonoBehaviour:
   velocityForward: 5
   tagToCheckEnemy: Obstaculo
   tagToEndGame: EndGame
+  compareTagCollect: Coin
   RestartScene: {fileID: 0}
   StartGame: {fileID: 0}
   invencible: 0
   _startPosition: {x: 0, y: 0, z: 0}
   coinCollector: {fileID: 3803442432464547441}
   animatorManager: {fileID: 0}
+  bounceScript: {fileID: 0}
 --- !u!54 &3459257844173342958
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -159,6 +162,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
+--- !u!114 &3602305005526932318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 146608452677830120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e76e8b181a807942983af2f181c950e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ease: 27
 --- !u!1 &3803442432464547441
 GameObject:
   m_ObjectHideFlags: 0
