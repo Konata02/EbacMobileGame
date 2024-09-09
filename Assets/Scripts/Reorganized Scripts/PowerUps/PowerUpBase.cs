@@ -27,4 +27,7 @@ public class PowerUpBase : CollectBase
             Debug.Log("End Power Up");    
             }
 
+
+    
+
 }

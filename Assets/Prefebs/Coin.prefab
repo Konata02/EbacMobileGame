@@ -31,6 +31,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 864092734768585475}
+  - {fileID: 4878536161280132455}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -68,6 +69,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareTag: CollectCoins
+  collectParticleSystem: {fileID: 7973671144558624332}
   value: {fileID: 11400000, guid: 089625bd872171f40a86a57154b04382, type: 2}
 --- !u!1 &3966911559353825479
 GameObject:
@@ -152,3 +154,93 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1001 &5418878522064130900
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 8135486943895742236}
+    m_Modifications:
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2709921121420094744, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8285300361509198971, guid: 2fdec2e27ab824d48a9743e520e3f032,
+        type: 3}
+      propertyPath: m_Name
+      value: Particle System
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2fdec2e27ab824d48a9743e520e3f032, type: 3}
+--- !u!4 &4878536161280132455 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 614657256522274355, guid: 2fdec2e27ab824d48a9743e520e3f032,
+    type: 3}
+  m_PrefabInstance: {fileID: 5418878522064130900}
+  m_PrefabAsset: {fileID: 0}
+--- !u!198 &7973671144558624332 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 2709921121420094744, guid: 2fdec2e27ab824d48a9743e520e3f032,
+    type: 3}
+  m_PrefabInstance: {fileID: 5418878522064130900}
+  m_PrefabAsset: {fileID: 0}

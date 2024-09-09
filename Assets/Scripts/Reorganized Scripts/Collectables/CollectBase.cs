@@ -5,7 +5,7 @@ using UnityEngine;
 public class CollectBase : MonoBehaviour
 {
     public string compareTag = "Player";
-    //public ParticleSystem collectParticleSystem;
+    public ParticleSystem collectParticleSystem;
 
     //[Header("Sounds")]
     //public AudioSource audioSource;
@@ -30,12 +30,12 @@ public class CollectBase : MonoBehaviour
 
     protected virtual void OnCollected()
     {
-       /* if(collectParticleSystem != null) { 
+        if(collectParticleSystem != null) { 
             collectParticleSystem.Play();
         }
-        if(audioSource != null){
-            audioSource.Play();
-        }*/
+        //if(audioSource != null){
+        //    audioSource.Play();
+        //}
                
     }
 
